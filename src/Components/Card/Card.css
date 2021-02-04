@@ -1,0 +1,16 @@
+.card{
+    height: 120px;
+    width:200px;
+    background-color: rgb(0, 40, 40,0.5);
+    margin:8px;
+}
+.card:hover{
+    background-color:rgb(0, 0, 0,0.89);
+}
+.title{
+    font-family: 'Hachi Maru Pop', cursive;
+    color: white;
+    height: 100%;
+    width:100%;
+    text-align: center;
+}
