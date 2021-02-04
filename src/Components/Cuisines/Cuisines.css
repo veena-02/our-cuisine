@@ -10,7 +10,8 @@
     background-image: url(
         'https://adventuresincooking.com/wp-content/uploads/2019/02/Citrus-Panna-Cotta-Tart-by-Eva-Kosmas-Flores001-8.jpg'
     );
-    background-repeat: repeat;
+    background-repeat: repeat-y;
+    background-size: cover;
     width: 100vw;
     height: 100vh;
 }
