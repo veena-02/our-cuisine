@@ -1,4 +1,4 @@
-.cus_head{
+.cat_head{
     background-color: black;
     color:white;
     font-size: 40px;
@@ -6,19 +6,21 @@
     padding: 15px;
     margin-bottom: 15px;
 }
-.cuisines{
+.categories{
     margin:0px !important;
     padding: 10px !important;
     background-image: url(
-        './../../Assets/CUS.jpg'
+        './../../Assets/IMG.jpg'
     );
     background-repeat: repeat-y;
     background-size: cover;
     width: 100vw;
     height: 100vh;
 }
-.cus_list{
+.cat_list{
     display:flex;
+    margin:10px;
+    padding: auto;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap:wrap-reverse;
 }
