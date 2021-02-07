@@ -1,10 +1,15 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 import './Card.css';
 const Card=(props)=>{
+    const cusName=props.name;
     return(
-        <div className='card'>
+        <NavLink 
+            to={`/Recipes/${cusName}`}
+            className='card'>
             <h1 className='title' >{props.name}</h1>
-        </div>
+        </NavLink>
+        
     );
 }
 export default Card;

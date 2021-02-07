@@ -1,6 +1,7 @@
 import React,{useState, useEffect} from 'react';
 import './RecipeCard.css';
 import axios from 'axios';
+import Loading from './../Loading/Loading'
 
 const RecipeCard=(props)=>{
     const [recipe,setRecipe]=useState([]);
@@ -11,7 +12,6 @@ const RecipeCard=(props)=>{
             const res=await axios.get(
                 `https://www.themealdb.com/api/json/v1/1/search.php?s=${props.cusName}`
             );
-            console.log(res.data.meals[0].strMeal);
             setRecipe(res.data.meals);
         } catch(error){
             console.log(error);
@@ -25,7 +25,7 @@ const RecipeCard=(props)=>{
     },[]);
     
     if(loading){
-        return <p>Fetching the data .... </p>;
+        return <Loading />
     }
 
     return(

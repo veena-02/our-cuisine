@@ -1,6 +1,6 @@
 .recipe_card{
     position: relative;
-    background-color: rgb(32,37,76);
+    background-color: orangered;
     border-radius: 10%;
     margin:40px;
     padding:0px;
@@ -27,6 +27,7 @@
     text-decoration: none;
     background-color:white;
     color:Red;
+    font-weight:bold;
     border-radius:10%;
     font-size:20px;
     display: block;

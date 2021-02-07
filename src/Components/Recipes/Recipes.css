@@ -1,6 +1,6 @@
 .recipes{
     padding:20px;
-    background-color: rgb(32,37,76);
+    background-color: orangered;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;

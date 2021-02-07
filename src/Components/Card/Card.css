@@ -1,5 +1,6 @@
 .card{
     height: 120px;
+    text-decoration:none;
     width:200px;
     background-color: rgb(0, 40, 40,0.5);
     margin:10px 20px;
