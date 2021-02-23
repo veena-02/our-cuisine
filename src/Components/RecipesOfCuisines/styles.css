@@ -1,0 +1,7 @@
+.recipes{
+    padding:20px;
+    background-color: orangered;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

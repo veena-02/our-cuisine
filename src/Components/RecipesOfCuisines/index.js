@@ -1,15 +1,15 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
-import RecipeCard from './../RecipeCard/RecipeCard';
-import "./Recipes.css";
+import RecipeCard from '../RecipeCard/RecipeCard';
+import "./styles.css";
 import { useParams } from "react-router-dom";
-
 
 const Recipes=(props)=>{
     const [recipeList, setList] = useState([]);
     let {cuisine}=useParams();
     const [loading,setLoading] = useState(true);
     console.log("Hello I should be rendered");
+
     const getData=async()=>{
         try{
         const res=await axios.get(
@@ -46,3 +46,5 @@ const Recipes=(props)=>{
     );
 }
 export default Recipes;
+
+

@@ -6,7 +6,7 @@ import Loading from './../Loading/Loading'
 const RecipeCard=(props)=>{
     const [recipe,setRecipe]=useState([]);
     const [loading, setLoading]=useState(true);
-
+    
     const getRecipeData=async()=>{
         try{
             const res=await axios.get(

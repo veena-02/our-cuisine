@@ -24,7 +24,7 @@ const Categories=()=>{
                 <div className='cat_list'>
                    { catgList.map((cat,index)=>{
                         return(
-                            <Card name={cat.strCategory} />
+                            <Card name={cat.strCategory} query='c' />
                         );
                     })
                    }

@@ -12,7 +12,6 @@ const Cuisines=()=>{
         );
         console.log(res.data.meals);
         setList(res.data.meals);
-        
     };
     useEffect(()=>{
         getData();
@@ -24,7 +23,7 @@ const Cuisines=()=>{
                 <div className='cus_list'>
                    { cuisineList.map((cuisine,index)=>{
                         return(
-                            <Card name={cuisine.strArea} />
+                            <Card name={cuisine.strArea} query='a' />
                         );
                     })
                    }

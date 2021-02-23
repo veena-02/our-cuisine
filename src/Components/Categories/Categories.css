@@ -10,9 +10,8 @@
     margin:0px !important;
     padding: 10px !important;
     background-image: url(
-        './../../Assets/cat.jpg'
+        './../../Assets/homeImg4.jpg'
     );
-    background-repeat: repeat-y;
     background-size: cover;
     width: 100vw;
     height: 100vh;

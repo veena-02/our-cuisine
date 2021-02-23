@@ -1,10 +1,12 @@
 import React from 'react';
-
+import './Home.css';
 const Home = ()=>{
     return(
-        <>
-        <h1>This is Home</h1>
-        </>
+        <div className="home">
+        <h1 className="home_heading">
+                Rain Or Shine It's Time To Dine 
+        </h1>
+        </div>
     );
 }
 export default Home;

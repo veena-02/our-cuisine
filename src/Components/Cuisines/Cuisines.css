@@ -9,12 +9,11 @@
     margin:0px !important;
     padding: 10px !important;
     background-image: url(
-        './../../Assets/cus2.jpg'
+        './../../Assets/homeImg2.jpeg'
     );
-    background-repeat: repeat-y;
     background-size: cover;
     width: 100vw;
-    height: 100vh;
+    height: 130vh;
 }
 .cus_list{
     display:flex;
