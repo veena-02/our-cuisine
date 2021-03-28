@@ -17,6 +17,7 @@ const Categories=()=>{
     useEffect(()=>{
         getData();
     },[]);
+    
     return(
         <>
             <div className="categories">

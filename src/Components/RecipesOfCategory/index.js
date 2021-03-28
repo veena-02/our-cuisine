@@ -3,7 +3,7 @@ import axios from "axios";
 import RecipeCard from '../RecipeCard/RecipeCard';
 import "./styles.css";
 import { useParams } from "react-router-dom";
-
+  
 const RecipesCategory=(props)=>{
     const [recipeList, setList] = useState([]);
     let {cuisine}=useParams();
@@ -30,8 +30,8 @@ const RecipesCategory=(props)=>{
     return(
     <>
     <h1 
-        style={{backgroundColor: 'black',color: 'white',textAlign:"center",fontSize:"40px",height:"63px",margin:'0px'}}>
-        <span style={{padding:'2px' ,border: '3px solid white',outlineColor:'rgb(255,104,1)',outlineStyle:'double'}}>Recipes</span>
+        style={{backgroundColor: 'black',color: 'white',textAlign:"center",fontSize:"40px",height:"63px",margin:'0px',height:"100px"}}>
+        <span style={{padding:'2px' ,border: '3px solid white',outlineColor:'rgb(255,104,1)',outlineStyle:'double'}}>{cuisine}</span>
     </h1>
     <div className="recipes">
         {

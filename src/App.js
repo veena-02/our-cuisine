@@ -6,6 +6,7 @@ import Recipes from "./Components/RecipesOfCuisines/index";
 import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Components/Home/Home";
 import RecipesCategory from "./Components/RecipesOfCategory/index";
+import Dish from "./Components/Dish/Dish";
 
 import './App.css';
 const App=()=>{
@@ -14,10 +15,11 @@ const App=()=>{
       <Navbar />
       <Switch>
       <Route exact path="/" component={Home} />
-      <Route exact path="/Cuisines/:cuisine" component={Recipes} />
-      <Route exact path="/Categories/:cuisine" component={RecipesCategory} />
-      <Route exact path="/Cuisines" component={Cuisines} />
-      <Route exact path="/Categories" component={Categories} />
+      <Route path="/Cuisines/:cuisine" component={Recipes} />
+      <Route path="/Categories/:cuisine" component={RecipesCategory} />
+      <Route path="/Cuisines" component={Cuisines} />
+      <Route path="/Categories" component={Categories} />
+      <Route path="/Dish/:dish_name" children={<Dish/>} />
       </Switch>
     </>
   );

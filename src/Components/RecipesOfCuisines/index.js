@@ -30,8 +30,8 @@ const Recipes=(props)=>{
     return(
     <>
     <h1 
-        style={{backgroundColor: 'black',color: 'white',textAlign:"center",fontSize:"40px",height:"63px",margin:'0px'}}>
-        <span style={{padding:'2px' ,border: '3px solid white',outlineColor:'rgb(255,104,1)',outlineStyle:'double'}}>Recipes</span>
+        style={{backgroundColor: 'black',color: 'white',textAlign:"center",fontSize:"40px",height:"90px",margin:'0px'}}>
+        <span style={{padding:'2px' ,border: '3px solid white',outlineColor:'rgb(255,104,1)',outlineStyle:'double'}}>{cuisine}</span>
     </h1>
     <div className="recipes">
         {

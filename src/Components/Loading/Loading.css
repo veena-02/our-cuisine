@@ -1,8 +1,5 @@
 .load{
-    height:100nh;
-    width:100vw;
-    background-color:orangered;
-    color: white;
-    font-size: 50px;
-    text-align: center;
+    background-image: url(./../../Assets/loading.gif);
+    height:50vh;
+    width:50vw;
 }

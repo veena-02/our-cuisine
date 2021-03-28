@@ -1,0 +1,27 @@
+.dish_heading{
+    background-color: black;
+    height:50px;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+.dish_name{
+    border:2px solid white;
+    padding:5px;
+    outline: 2px solid orangered;
+}
+
+.dish_body{
+    background-image: url(./../../Assets/penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table.jpg);  
+    background-size: cover;
+    height: 130vh;
+    width:100vw;
+    margin-top:-30px;
+}
+.glassmorphic{
+    margin:50px 15%;
+    background-color: rgb(255,255, 255,0.2);
+    backdrop-filter: blur(8px);
+    border-radius:1.8%;
+    border: 1px solid black;
+}
