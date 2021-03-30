@@ -1,11 +1,14 @@
 .home{
-    background-image: url(./../../Assets/homeImg1.jfif);
+    background-image: 
+        linear-gradient(to right, rgb(255,255,255,0.5), rgb(0,0,0,0.7)),        
+        url(./../../Assets/homeImg1.jfif);
     background-size: cover;
     height: 100vh;
     width: 100vw;
     margin:0px !important;
     padding:10px !important;
 }
+
 .home_heading{
     font-family: 'Kaushan Script', cursive;
     color:white;
@@ -13,7 +16,30 @@
     height:60px;
     background-color: black;
     text-align:center;
-    margin-top: 20px;
     padding-top:14px;
     padding-bottom:14px;
 }
+.home_glassmorphic{
+    padding: 1%;
+    background-color:rgb(0,0,0,0.5);
+    border-radius:5%;
+    backdrop-filter: blur(18px);
+    color:white;
+    font-family: Valera;
+    font-size: 23px;
+}
+.chef-animation {
+    animation: MoveUpDown 6s linear infinite;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  
+  @keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 80px;
+    }
+  }

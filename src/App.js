@@ -7,8 +7,9 @@ import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Components/Home/Home";
 import RecipesCategory from "./Components/RecipesOfCategory/index";
 import Dish from "./Components/Dish/Dish";
-
 import './App.css';
+import Footer from './Components/Footer/Footer';
+
 const App=()=>{
   return(
     <>      
@@ -21,6 +22,7 @@ const App=()=>{
       <Route path="/Categories" component={Categories} />
       <Route path="/Dish/:dish_name" children={<Dish/>} />
       </Switch>
+      <Footer />      
     </>
   );
 }
