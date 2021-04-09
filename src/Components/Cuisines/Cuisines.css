@@ -12,7 +12,6 @@
         './../../Assets/homeImg2.jpeg'
     );
     background-size: cover;
-    width: 100vw;
     height: 130vh;
 }
 .cus_list{

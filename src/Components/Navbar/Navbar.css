@@ -8,12 +8,12 @@
 .navbar{
     display:flex;
     color:white;
-    border-top: 5px solid rgb(255,104,1) ;
-    background-color:black;
+    border-top: 5px solid white ;
+    background-color: black;
     font-size: 25px;
     font-weight:bold;
     height: 50px;
 }
 .active_link{
-    color: rgb(255,104,1);
+    color: rgb(255,255,255,0.8);
 }

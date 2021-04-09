@@ -4,6 +4,7 @@ import chefImg from './../../Assets/cartoon-chef.svg';
 
 const Home = ()=>{
     return(
+        <>
         <div className="home">
         <h1 className="home_heading">
                 Rain Or Shine It's Time To Dine 
@@ -23,6 +24,7 @@ const Home = ()=>{
             </div>
         </div>
         </div>
+        </>
     );
 }
 export default Home;

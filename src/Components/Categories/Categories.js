@@ -30,7 +30,7 @@ const Categories=()=>{
                     })
                    }
                 </div>
-            </div>
+            </div>         
         </>
     );
 }

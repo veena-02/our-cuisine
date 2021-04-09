@@ -3,6 +3,8 @@ import axios from "axios";
 import RecipeCard from '../RecipeCard/RecipeCard';
 import "./styles.css";
 import { useParams } from "react-router-dom";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
   
 const RecipesCategory=(props)=>{
     const [recipeList, setList] = useState([]);
