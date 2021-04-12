@@ -27,16 +27,19 @@ const Dish=(props)=>{
     },[]);
 
     return(
-        <div className="dish_body">
+        <>{
+            (loading)?
+            <Loading />:
+            (
+            <>    
             <h1 className="dish_heading"><span className="dish_name">{dish_name}</span></h1>
             <div class="glassmorphic">
                 <h1 style={{textAlign:"center",fontFamily:"'Chango', cursive"}}>Ingredients</h1>
+                <div style={{display: 'flex'}}>
+                    <div>
+                            <img src={dish[0].strMealThumb} height="350" width="350"/>
+                    </div>
                 <p >
-                    {
-                        (loading)
-                        ?
-                        <Loading />
-                        :(
                         <ul style={{textAlign:"center",fontFamily:"'Varela Round', sans-serif",fontSize:'25px'}}>
                         {(dish[0].strMeasure1 && dish[0].strMeasure1!=="")?
                         `${dish[0].strMeasure1}  ${dish[0].strIngredient1}, `:null}
@@ -79,17 +82,12 @@ const Dish=(props)=>{
                         {(dish[0].strMeasure20 && dish[0].strMeasure20!=="")?
                         `${dish[0].strMeasure20}  ${dish[0].strIngredient20}, `:null}
                         </ul>
-                        )
-                    }  
                 </p>
+                </div>
                 <h1 style={{textAlign:"center",fontFamily:"'Chango', cursive"}}>Instructions</h1>
                 <p>
                     <ol>
                     {
-                        (loading)
-                        ?
-                        <Loading />
-                        :
                         dish[0].strInstructions.split(".").map((value,idx)=>{
                             return(
                                 <li style={{fontFamily:"'Varela Round', sans-serif",fontSize:'25px',listStyleType:"none"}}>
@@ -101,7 +99,9 @@ const Dish=(props)=>{
                     </ol>
                 </p>   
             </div>
-        </div>
+            </>
+            )}
+        </>
     );
 }
 export default Dish;

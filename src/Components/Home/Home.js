@@ -14,6 +14,9 @@ const Home = ()=>{
                 <img src={chefImg} alt="fat-chef" className="chef-animation"/>
             </div>
             <div style={{color: 'white', fontSize:"40px",fontFamily:"Valera",margin:"4% 4%"}}>
+                <h1 style={{fontFamily: "Valera"}}>
+                    OUR CUISINE
+                </h1>
                 <p style={{fontFamily: "Valera"}}>
                     Hey Food Lovers! Explore multiple cuisines from different continents. 
                     Why always go for the same old, same old?

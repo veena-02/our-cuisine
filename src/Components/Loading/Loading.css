@@ -1,5 +1,7 @@
 .load{
     background-image: url(./../../Assets/loading.gif);
-    height:50vh;
-    width:50vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:500px;
+    width:500px;
 }
