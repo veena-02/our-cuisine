@@ -6,15 +6,17 @@
     padding: 15px;
     margin-bottom: 15px;
 }
-.categories{
-    margin:0px !important;
-    padding: 10px !important;
-    background-image: url(
-        './../../Assets/homeImg4.jpg'
-    );
-    background-size: cover;
+@media (min-width: 768px){
+    .categories{
+        margin:0px !important;
+        padding: 10px !important;
+        background-image: url(
+            './../../Assets/homeImg4.jpg'
+        );
+        background-size: cover;
     
-    height: 100vh;
+        height: 110vh;
+    }
 }
 .cat_list{
     display:flex;

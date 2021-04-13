@@ -35,8 +35,8 @@ const Dish=(props)=>{
             <h1 className="dish_heading"><span className="dish_name">{dish_name}</span></h1>
             <div class="glassmorphic">
                 <h1 style={{textAlign:"center",fontFamily:"'Chango', cursive"}}>Ingredients</h1>
-                <div style={{display: 'flex'}}>
-                    <div>
+                <div className="ing_d_flex">
+                    <div style={{display: 'flex',justifyContent:"center"}}>
                             <img src={dish[0].strMealThumb} height="350" width="350"/>
                     </div>
                 <p >

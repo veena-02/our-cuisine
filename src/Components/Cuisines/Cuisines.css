@@ -5,6 +5,8 @@
     text-align: center;
     padding: 15px;
 }
+
+@media (min-width: 768px){
 .cuisines{
     margin:0px !important;
     padding: 10px !important;
@@ -12,7 +14,8 @@
         './../../Assets/homeImg2.jpeg'
     );
     background-size: cover;
-    height: 130vh;
+    height: 180vh;
+}
 }
 .cus_list{
     display:flex;
